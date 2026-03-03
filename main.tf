@@ -3,7 +3,7 @@ terraform {
     bucket         = "terraform-state-elisha"
     key            = "dev/terraform.tfstate"
     region         = "ap-south-2"
-    dynamodb_table = "terraform-locks"
+    use_lockfile   = true
     encrypt        = true
   }
 }
